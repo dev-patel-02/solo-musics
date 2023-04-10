@@ -6,7 +6,7 @@ function AllMusic() {
   const url = process.env.REACT_APP_BASE_URL;
   console.log(url);
   useEffect(() => {
-    fetch(url)
+    fetch('https://solo-musics.vercel.app/music')
       .then((res) => res.json())
       .then((data) => setMusic(data));
   }, [url]);

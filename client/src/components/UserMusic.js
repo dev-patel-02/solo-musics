@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 function UserMusic() {
   const [music, setMusic] = useState([]);
-  const url = process.env.REACT_APP_BASE_URL;
+  const url = 'https://solo-musics.vercel.app';
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

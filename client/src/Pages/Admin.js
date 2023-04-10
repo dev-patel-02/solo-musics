@@ -11,7 +11,7 @@ export default function Admin() {
   const [user] = useAuthState(auth);
   const email = user?.email;
 
-  const url = `${process.env.REACT_APP_BASE_URL}/${email}`;
+  const url = `https://solo-musics.vercel.app/${email}`;
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
